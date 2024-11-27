@@ -18,8 +18,8 @@ function renderC3(){
     categoryEntries
     let otherProduct = [];
     let otherTotal = ["其他"];
-    if(categoryEntries.length > 2){
-        otherProduct = categoryEntries.slice(2); //參數使用的是index
+    if(categoryEntries.length > 3){
+        otherProduct = categoryEntries.slice(3); //參數使用的是index
         otherProduct.forEach((item, index) =>{
             if(otherTotal[1] == undefined){
                 otherTotal.push(item[1]);
@@ -27,7 +27,7 @@ function renderC3(){
                 otherTotal[1] += item[1];
             }
         })
-        categoryEntries.splice(2,Infinity, otherTotal);//內建元素Infinity無限大
+        categoryEntries.splice(3,Infinity, otherTotal);//內建元素Infinity無限大
     }
 
 
