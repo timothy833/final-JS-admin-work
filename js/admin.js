@@ -14,7 +14,6 @@ function renderC3(){
     //重新排序類別
     const categoryEntries = Object.entries(categoryTotal);
     categoryEntries.sort((a, b)=> b[1] - a[1]);
-    console.log(categoryEntries);
     categoryEntries
     let otherProduct = [];
     let otherTotal = ["其他"];
